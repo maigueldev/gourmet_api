@@ -6,7 +6,7 @@ import {
     UpdateDateColumn,
 } from "typeorm";
 
-@Entity('profiles')
+@Entity('tbl_profiles')
 class Profile {
 
     @PrimaryGeneratedColumn()

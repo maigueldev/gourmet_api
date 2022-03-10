@@ -12,7 +12,7 @@ import {
 
 import Profile from '@modules/profiles/infra/typeorm/entities/Profile';
 
-@Entity('users')
+@Entity('tbl_users')
 class User {
 
     @PrimaryGeneratedColumn()
