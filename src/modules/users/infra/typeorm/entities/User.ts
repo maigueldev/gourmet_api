@@ -25,6 +25,9 @@ class User {
     @PrimaryColumn()
     email: string;
 
+    @Column()
+    password: string;
+
     @Column({
         length: 100,
     })
