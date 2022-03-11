@@ -6,21 +6,14 @@ import 'express-async-errors';
 import cors from 'cors';
 import { errors } from 'celebrate';
 
+import routes from './routes';
+
 
 const app = express();
 
-/* For test server [this will be delete] */
-const usersRouter = Router();
-
-usersRouter.get(
-    '/',
-    (req, res) => res.send('hello world')
-);
-/* END -> For test server [this will be delete] */
-
 app.use(cors());
 app.use(express.json());
-app.use(usersRouter);
+app.use(routes);
 
 app.use(errors());
 
