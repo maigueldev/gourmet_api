@@ -42,13 +42,15 @@ class FoodPlates {
     content: string;
 
     @Column({
-        type: 'tinyint',
+        type: 'int',
+        width: 1,
         default: 0,
     })
     removed: number;
 
     @Column({
-        type: 'tinyint',
+        type: 'int',
+        width: 1,
         default: 1,
     })
     is_active: number;
