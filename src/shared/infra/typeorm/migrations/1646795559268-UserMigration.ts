@@ -18,6 +18,7 @@ export class UserMigration1646795559268 implements MigrationInterface {
                   type: 'integer',
                   isPrimary: true,
                   default: 'null',
+                  isGenerated: true,
                 },
                 {
                   name: 'uuid',

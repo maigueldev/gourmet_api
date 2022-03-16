@@ -12,6 +12,7 @@ export class FoodPlatesMigration1646869269344 implements MigrationInterface {
                         type: 'integer',
                         isPrimary: true,
                         default: null,
+                        isGenerated: true,
                     },
                     {
                         name: 'uuid',

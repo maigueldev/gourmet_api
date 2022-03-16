@@ -12,6 +12,7 @@ export class ProfileMigration1646777935587 implements MigrationInterface {
                         type: 'integer',
                         isPrimary: true,
                         default: null,
+                        isGenerated: true,
                     },
                     {
                         name: 'name',

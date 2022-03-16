@@ -12,6 +12,7 @@ export class UserRequestsMigration1646867687354 implements MigrationInterface {
                         type: 'integer',
                         isPrimary: true,
                         default: null,
+                        isGenerated: true,
                     },
                     {
                         name: 'uuid',
