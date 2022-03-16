@@ -18,6 +18,7 @@
     "tsconfig-paths": "^3.13.0",
     "tsyringe": "^4.6.0",
     "typeorm": "^0.2.45",
+    "typeorm-seeding": "^1.6.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -34,7 +35,9 @@
   "scripts": {
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "ts-node-dev src/shared/infra/http/server.ts"
+    "start": "ts-node-dev src/shared/infra/http/server.ts",
+    "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
+    "seed:run": "ts-node -r tsconfig-paths/register ./node_modules/typeorm-seeding/dist/cli.js seed"
   },
   "repository": {
     "type": "git",
