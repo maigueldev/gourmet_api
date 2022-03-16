@@ -18,7 +18,7 @@ class CreateUserService {
 
     ) {}
 
-    public async execute({ email, first_name, password}: IRequestDTO): Promise<User> {
+    public async execute({ email, first_name, password }: IRequestDTO): Promise<User> {
 
         const user = await this.usersRepository.create({
             email,

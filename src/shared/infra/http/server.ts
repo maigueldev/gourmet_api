@@ -6,6 +6,9 @@ import 'express-async-errors';
 import cors from 'cors';
 import { errors } from 'celebrate';
 
+import '@shared/infra/typeorm';
+import '@shared/container';
+
 import routes from './routes';
 
 

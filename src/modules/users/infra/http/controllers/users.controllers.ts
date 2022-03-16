@@ -9,9 +9,6 @@ export default class UsersController {
     public async create(req: Request, res: Response): Promise<Response> {
         const { email, first_name, password } = req.body;
 
-        console.log('Aqui va!!!')
-        console.log('')
-        console.log('')
         const createUser = container.resolve(CreateUserService);
 
         const user = await createUser.execute({
